@@ -1,0 +1,18 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.4519838008334285 0.879515565237588 0.14887247659985306 0.6732183186372759
+  position 1.4414191863719037 1.7404008330206762 2.6558420619778014
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4 4
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
