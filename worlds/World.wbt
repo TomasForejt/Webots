@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.7697893091372494 -0.6335741845180887 0.07751240062232102 6.0042823322342045
-  position 0.6329699736231704 2.0832776196847593 5.707207236392751
+  orientation 0.34321161049957677 0.5776593169423886 0.7406183254335124 3.540472587488285
+  position 0.17752701613964983 1.281102185804764 0.15879839441997132
 }
 TexturedBackground {
   texture "empty_office"
@@ -24,6 +24,9 @@ RectangleArena {
       center 1 1
       scale 0.1 0.1
     }
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 1 0.3 0.5
   }
 }
 TinkerbotsBase {
@@ -84,4 +87,18 @@ TinkerbotsBase {
       }
     }
   }
+  extensionSlot [
+    DistanceSensor {
+      translation 0.02 0 0.06
+      rotation 0 0 1 -1.5707953071795862
+      name "ifL"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.02 -3.67383e-18 0.06
+      rotation 0 0 1 -1.5707953071795862
+      name "ifR"
+      type "infra-red"
+    }
+  ]
 }
