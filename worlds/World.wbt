@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.9926179478822755 -0.06658682253937233 -0.10136964341502996 0.49440136062705897
-  position -1.264973801833293 2.2622775352355067 3.547953307894772
+  orientation 0.7697893091372494 -0.6335741845180887 0.07751240062232102 6.0042823322342045
+  position 0.6329699736231704 2.0832776196847593 5.707207236392751
 }
 TexturedBackground {
   texture "empty_office"
@@ -17,7 +17,7 @@ RectangleArena {
   floorAppearance Appearance {
     texture ImageTexture {
       url [
-        "C:/Users/lukas/OneDrive/Dokumenty/Webots/podlaha.jpg"
+        "D:/VUT/programování/Webots/podlaha.jpg"
       ]
     }
     textureTransform TextureTransform {
