@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.09372385355187098 -0.9818902861181233 -0.1646429631118712 1.8551675092339845
-  position -0.6528319683966126 0.2585139130993749 -0.2645863442604491
+  orientation -0.9926179478822755 -0.06658682253937233 -0.10136964341502996 0.49440136062705897
+  position -1.264973801833293 2.2622775352355067 3.547953307894772
 }
 TexturedBackground {
   texture "empty_office"
@@ -14,8 +14,16 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 4 4
-  floorAppearance Parquetry {
-    type "light strip"
+  floorAppearance Appearance {
+    texture ImageTexture {
+      url [
+        "C:/Users/lukas/OneDrive/Plocha/FSI/131894187_1474590559418380_5176673992521959066_n.jpg"
+      ]
+    }
+    textureTransform TextureTransform {
+      center 1 1
+      scale 0.1 0.1
+    }
   }
 }
 TinkerbotsBase {
