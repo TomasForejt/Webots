@@ -16,7 +16,13 @@ TIME_STEP = 64;
 %  camera = wb_robot_get_device('camera');
 %  wb_camera_enable(camera, TIME_STEP);
 %  motor = wb_robot_get_device('motor');
+motor_left = wb_robot_device('motor_left');
+motor_right = wb_robot_device('motor_right');
 
+wb_motor_set_position(motor_left, inf);
+wb_motor_set_velocity(motor_left, 1);
+wb_motor_set_position(motor_right, inf);
+wb_motor_set_velocity(motor_right, 1);
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
 % and leave the loop when Webots signals the termination
