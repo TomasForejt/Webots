@@ -3,13 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-<<<<<<< HEAD
-  orientation 0.9126886886127479 -0.4040825249960726 0.060964503369920084 5.950197391417377
-  position 0.01700999969307282 0.7873076357215211 1.9520135763443391
-=======
-  orientation -0.07119109944972789 0.958015117829306 0.2777388366246966 2.8026746569683967
-  position 2.612614252649779 4.112941393521081 -5.220794977613108
->>>>>>> 58b490c7e379961d491d521c18f96cc941cfc481
+  orientation -0.9926179478822755 -0.06658682253937233 -0.10136964341502996 0.49440136062705897
+  position -1.264973801833293 2.2622775352355067 3.547953307894772
 }
 TexturedBackground {
   texture "empty_office"
@@ -18,12 +13,11 @@ TexturedBackgroundLight {
   texture "empty_office"
 }
 RectangleArena {
-  translation 0 0.03 0
   floorSize 4 4
   floorAppearance Appearance {
     texture ImageTexture {
       url [
-        "D:/VUT/programování/Webots/path.jpg"
+        "C:/Users/lukas/OneDrive/Plocha/FSI/131894187_1474590559418380_5176673992521959066_n.jpg"
       ]
     }
     textureTransform TextureTransform {
