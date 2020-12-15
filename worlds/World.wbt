@@ -17,7 +17,7 @@ RectangleArena {
   floorAppearance Appearance {
     texture ImageTexture {
       url [
-        "C:/Users/lukas/OneDrive/Plocha/FSI/131894187_1474590559418380_5176673992521959066_n.jpg"
+        "C:/Users/lukas/OneDrive/Dokumenty/Webots/podlaha.jpg"
       ]
     }
     textureTransform TextureTransform {
