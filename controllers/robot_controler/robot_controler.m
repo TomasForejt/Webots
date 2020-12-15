@@ -21,6 +21,10 @@ motor_right = wb_robot_get_device('motor_right');
 motor_leftB = wb_robot_get_device('motor_leftB');
 motor_rightB = wb_robot_get_device('motor_rightB');
 
+ifR = wb_robot_get_device('ifR');
+ifL = wb_robot_get_device('ifL');
+
+
 wb_motor_set_position(motor_left, inf);
 wb_motor_set_velocity(motor_left, -3);
 wb_motor_set_position(motor_right, inf);
@@ -30,11 +34,37 @@ wb_motor_set_velocity(motor_leftB, -3);
 wb_motor_set_position(motor_rightB, inf);
 wb_motor_set_velocity(motor_rightB, 3);
 
+
+
+
+
+
+
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
 % and leave the loop when Webots signals the termination
 %
 while wb_robot_step(TIME_STEP) ~= -1
+
+ifL_value = wb_distance_sensor_get_value(ifL)
+
+if ifL_value > 800
+
+ 
+wb_motor_set_velocity(motor_left, 0);
+wb_motor_set_velocity(motor_right, 0);
+wb_motor_set_velocity(motor_leftB, 0);
+wb_motor_set_velocity(motor_rightB,0);
+else
+
+wb_motor_set_velocity(motor_left, -3);
+wb_motor_set_velocity(motor_right, 3);
+wb_motor_set_velocity(motor_leftB, -3);
+wb_motor_set_velocity(motor_rightB, 3);
+    
+    
+end
+
 
   % read the sensors, e.g.:
   %  rgb = wb_camera_get_image(camera);
