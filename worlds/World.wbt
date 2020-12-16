@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.1627408635797362 -0.9846508793097736 -0.06307184154447397 1.5465745811511582
-  position -2.2109626291694644 0.39813555803606393 0.04060823798195547
+  orientation -0.9774967454865796 -0.17740384127885983 0.11414021930349583 0.592552320362284
+  position -0.13835664227054745 0.17513484456181783 0.33812688753591363
 }
 TexturedBackground {
   texture "empty_office"
@@ -30,10 +30,7 @@ RectangleArena {
   }
 }
 TinkerbotsBase {
-  hidden translation_16 0 2.4820629301869346e-09 -1.1680297284932806e-09
-  hidden translation_18 1.0748045682629215e-10 6.205567656958344e-11 5.838383942968761e-11
-  hidden translation_20 -7.113946411119176e-11 4.1073602852215174e-11 3.864328995684119e-11
-  translation 0 0.03 0
+  translation -0.1 0.03 0
   controller "robot_controler"
   downSlot TinkerbotsCube {
     frontSlot TinkerbotsTwister {
@@ -92,13 +89,13 @@ TinkerbotsBase {
   }
   extensionSlot [
     DistanceSensor {
-      translation 0.02 0 0.06
+      translation 0.04 2.03924e-08 0.06
       rotation 0 0 1 -1.5707953071795862
       name "ifL"
       type "infra-red"
     }
     DistanceSensor {
-      translation -0.02 -3.67383e-18 0.06
+      translation -0.04 -2.03924e-08 0.06
       rotation 0 0 1 -1.5707953071795862
       name "ifR"
       type "infra-red"
